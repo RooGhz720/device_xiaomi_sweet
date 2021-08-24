@@ -46,6 +46,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.earlyGl.app.duration=16600000
 
 # App
+ro.launcher.blur.appLaunch=0 \
 persist.device_config.runtime_native_boot.iorap_perfetto_enable=true
 
 # Render Engine
