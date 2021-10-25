@@ -49,6 +49,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ro.launcher.blur.appLaunch=0 \
 persist.device_config.runtime_native_boot.iorap_perfetto_enable=true
 
+# Perfetto
+persist.device_config.runtime_native_boot.iorap_readahead_enable=true
+
 # Render Engine
 PRODUCT_PROPERTY_OVERRIDES += \
 	debug.hwui.renderer=skiagl \
