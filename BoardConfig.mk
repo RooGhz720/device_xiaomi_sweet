@@ -58,6 +58,8 @@ BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CONFIG := sweet_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_VERSION := proton
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-$(TARGET_KERNEL_CLANG_VERSION)
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sweet
 
 # Partitions
