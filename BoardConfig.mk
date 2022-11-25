@@ -188,3 +188,6 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # inherit from the proprietary version
 -include vendor/xiaomi/sweet/BoardConfigVendor.mk
+
+# Inherit from proprietary files for miuicamera
+-include vendor/xiaomi/sweet-miuicamera/products/board.mk
