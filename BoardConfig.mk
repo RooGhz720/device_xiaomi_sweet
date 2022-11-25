@@ -31,6 +31,7 @@ TARGET_OTA_ASSERT_DEVICE := sweet,sweetin
 
 # Audio
 AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
+AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
@@ -79,7 +80,7 @@ KERNEL_LD := LD=ld.lld
 KERNEL_SUPPORTS_LLVM_TOOLS := true
 
 # Manifest
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/manifests/device_framework_matrix.xml \
     $(DEVICE_PATH)/manifests/lineage_device_framework_matrix.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifests/manifest.xml
