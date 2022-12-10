@@ -11,17 +11,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from sweet device
 $(call inherit-product, device/xiaomi/sweet/device.mk)
 
-# Inherit some common LineageOS stuff
+# Inherit some common xdroidOSS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
-WITH_GMS := true
-PALYRIM_MAINTAINER := Anupam
-TARGET_EXCLUDES_AUDIOFX := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
+XDROID_MAINTAINER := RooGhz720
 TARGET_SUPPORTS_QUICK_TAP := true
-PALYRIM_OFFICIAL := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+XDROID_BOOT := 1080
 
-PRODUCT_NAME := lineage_sweet
+# Product Specifics
+PRODUCT_NAME := xdroid_sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 10 Pro
